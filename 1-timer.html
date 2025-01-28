@@ -7,8 +7,9 @@
     <title>Timer</title>
     <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-EyZmBGcZ.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-BArvkMiJ.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/1-timer-B9vTu08s.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-CIZKr6W0.css">
   </head>
   <body>
@@ -17,26 +18,32 @@
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Timer</h1>
       </div>
+      <div class="input-wrapper">
+        <input
+          class="timer-input input-text"
+          type="text"
+          id="datetime-picker"
+        />
+        <button class="timer-btn" type="button" data-start>Start</button>
+      </div>
+      <div class="timer">
+        <div class="field">
+          <span class="value js-timer-days" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value js-timer-hours" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value js-timer-minutes" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value js-timer-seconds" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
     </main>
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
-    <div class="timer">
-      <div class="field">
-        <span class="value js-timer-days" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="field">
-        <span class="value js-timer-hours" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value js-timer-minutes" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value js-timer-seconds" data-seconds>00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
   </body>
 </html>
